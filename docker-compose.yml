@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    redis:
+        build: .
+        command: redis-server --requirepass SapiAdmin2020
+        ports:
+            - "6379:6379"
